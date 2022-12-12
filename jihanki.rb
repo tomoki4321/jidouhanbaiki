@@ -11,7 +11,22 @@ class VendingMachine
     # 最初の自動販売機に入っている金額は0円
     @slot_money = 0
     @sales_amount = 0
-    @juices=[[{price:120,name:"コーラ"},{price:120,name:"コーラ"},{price:120,name:"コーラ"},{price:120,name:"コーラ"},{price:120,name:"コーラ"}]]
+    @juices=[[{price:120,name:"コーラ"},
+              {price:120,name:"コーラ"},
+              {price:120,name:"コーラ"},
+              {price:120,name:"コーラ"},
+              {price:120,name:"コーラ"}],
+              [{price:200,name:"レッドブル"},
+                {price:200,name:"レッドブル"},
+                {price:200,name:"レッドブル"},
+                {price:200,name:"レッドブル"},
+                {price:200,name:"レッドブル"}],
+              [{price:100,name:"水"},
+              {price:100,name:"水"},
+              {price:100,name:"水"},
+              {price:100,name:"水"},
+              {price:100,name:"水"}]
+            ]
   end
 
   # 投入金額の総計を取得できる。
